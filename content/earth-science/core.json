@@ -1,0 +1,182 @@
+{
+  "pack": "earth-science-core",
+  "defaults": {
+    "category": "earth-science", "visualType": "emoji", "reviewStatus": "reviewed",
+    "reviewNotes": "Claude-authored and self-checked against standard references; pending independent expert verification.",
+    "source": "Standard earth science references (e.g. NOAA, USGS, OpenStax)"
+  },
+  "questions": [
+    {
+      "id": "earth-no-atmosphere-boiling", "subcategory": "Atmosphere", "difficulty": "medium", "questionType": "prediction", "answerType": "change", "emoji": "💨",
+      "scenario": "Imagine Earth's atmosphere were suddenly stripped away, leaving the oceans exposed to near-vacuum.",
+      "question": "What happens to the boiling point of the water?",
+      "options": ["It rises", "It falls dramatically", "It stays at 100 °C"], "correctIndex": 1,
+      "reveal": "It falls dramatically.",
+      "explanation": "Water boils when its vapour pressure matches the pressure pushing down on it. Remove the air and that pressure drops toward zero, so the boiling point plunges and oceans at everyday temperatures would start to boil. Boiling carries heat away, so the water left behind would chill and even freeze while still bubbling. Eventually the vapour itself would build up into a thin new atmosphere and the boiling would stop.",
+      "intuitionTrap": "Boiling is associated with heat, not with pressure.",
+      "principle": "A liquid's boiling point depends on the pressure above it.",
+      "funFact": "On the summit of Everest, water boils at only about 70 °C.",
+      "tags": ["boiling", "pressure", "atmosphere"], "concepts": ["boiling-point-pressure"], "variantGroup": "boiling-without-air"
+    },
+    {
+      "id": "earth-lightning-vs-sun", "subcategory": "Weather", "difficulty": "easy", "questionType": "comparison", "answerType": "comparison", "emoji": "⚡",
+      "scenario": "Compare the air inside a lightning bolt with the visible surface of the Sun.",
+      "question": "Which is hotter?",
+      "options": ["The Sun's surface", "The lightning bolt", "About the same"], "correctIndex": 1,
+      "reveal": "The lightning bolt, by about five times.",
+      "explanation": "A lightning channel briefly heats the air to around 30,000 °C, roughly five times hotter than the Sun's visible surface at about 5,500 °C. It's only a few centimetres wide and lasts a tiny fraction of a second, which is why it doesn't melt everything around it. That sudden heating makes the air expand explosively, and the shock wave is what you hear as thunder.",
+      "intuitionTrap": "Nothing on Earth feels like it could rival the Sun.",
+      "principle": "Temperature is about energy concentration: a small, brief event can be far hotter than a vast, steady one.",
+      "funFact": "Lightning strikes Earth roughly 40–50 times every second, worldwide.",
+      "tags": ["lightning", "temperature", "thunder"], "concepts": ["temperature-vs-heat", "lightning"], "variantGroup": "lightning-heat", "source": "NOAA National Weather Service"
+    },
+    {
+      "id": "earth-thunder-countdown", "subcategory": "Weather", "difficulty": "easy", "questionType": "estimation", "answerType": "quantity", "emoji": "⛈️",
+      "scenario": "You see a flash of lightning and count 9 seconds before you hear the thunder.",
+      "question": "Roughly how far away was the strike?",
+      "options": ["About 300 metres", "About 3 kilometres", "About 9 kilometres"], "correctIndex": 1, "shuffle": false,
+      "reveal": "About 3 kilometres.",
+      "explanation": "The light reaches you almost instantly, but sound plods along at about 343 metres per second. In 9 seconds sound travels roughly 3 kilometres, so that's how far away the strike was. The handy rule: divide the seconds by 3 to get kilometres. If the gap is under about 30 seconds, the storm is close enough that you should already be indoors.",
+      "intuitionTrap": "It's easy to treat the flash and the bang as one event happening together.",
+      "principle": "Light travels about a million times faster than sound in air, so the delay measures distance.",
+      "funFact": "Thunder is rarely heard beyond about 15–25 km, even though lightning can be seen much farther away.",
+      "tags": ["sound", "lightning", "estimation"], "concepts": ["speed-of-sound"], "variantGroup": "thunder-distance"
+    },
+    {
+      "id": "earth-quake-magnitude-energy", "subcategory": "Earthquakes", "difficulty": "medium", "questionType": "magnitude", "answerType": "magnitude", "emoji": "📈",
+      "scenario": "One earthquake measures magnitude 6. Another measures magnitude 7.",
+      "question": "How much more energy does the magnitude 7 quake release?",
+      "options": ["About 1.2 times", "About 10 times", "About 32 times"], "correctIndex": 2, "shuffle": false,
+      "reveal": "About 32 times more energy.",
+      "explanation": "Earthquake magnitude is a logarithmic scale. Each whole step means about 10 times larger ground motion on a seismograph and about 32 times more energy released. So a magnitude 8 releases about 1,000 times the energy of a magnitude 6. A difference of 'just one point' is enormous.",
+      "intuitionTrap": "Numbers that differ by one feel like they should describe similar events.",
+      "principle": "On the magnitude scale, energy grows by a factor of about 10^1.5 ≈ 32 per unit step.",
+      "funFact": "The 1960 Chile earthquake, magnitude 9.5, is the largest ever recorded.",
+      "tags": ["earthquakes", "logarithms", "energy"], "concepts": ["logarithmic-scales"], "variantGroup": "quake-magnitude", "source": "USGS"
+    },
+    {
+      "id": "earth-salty-ocean", "subcategory": "Oceans", "difficulty": "medium", "questionType": "causal", "answerType": "causal", "emoji": "🧂",
+      "scenario": "Rivers taste fresh, yet the oceans they flow into are salty.",
+      "question": "Where does the ocean's salt mostly come from?",
+      "options": ["Salt dissolving from the seabed", "Rivers, then evaporation", "Salt made by sea creatures"], "correctIndex": 1,
+      "reveal": "From rivers, concentrated by evaporation.",
+      "explanation": "Rain is slightly acidic and slowly dissolves minerals from rocks. Rivers carry tiny amounts of these dissolved salts, too little to taste, into the sea. Evaporation lifts pure water out of the ocean but leaves the salts behind, and over hundreds of millions of years they've accumulated. Hydrothermal vents on the seafloor add some dissolved minerals too.",
+      "intuitionTrap": "If rivers taste fresh, they seem unable to be the source of all that salt.",
+      "principle": "Evaporation removes water but not dissolved salts, so salts accumulate where water only leaves by evaporating.",
+      "funFact": "The same process makes landlocked lakes like the Dead Sea far saltier than the ocean.",
+      "tags": ["oceans", "salt", "evaporation", "weathering"], "concepts": ["evaporation-concentration"], "variantGroup": "salty-sea", "source": "USGS Water Science School"
+    },
+    {
+      "id": "earth-cloud-weight", "subcategory": "Weather", "difficulty": "hard", "questionType": "estimation", "answerType": "quantity", "emoji": "☁️",
+      "scenario": "A fluffy white cumulus cloud, about a kilometre across, drifts overhead.",
+      "question": "Roughly how much does the water in it weigh?",
+      "options": ["A few kilograms", "About one tonne", "Hundreds of tonnes"], "correctIndex": 2, "shuffle": false,
+      "reveal": "Hundreds of tonnes.",
+      "explanation": "A cumulus cloud holds about half a gram of liquid water per cubic metre. A cloud a kilometre across contains about a billion cubic metres, so that's roughly 500 tonnes of water. It doesn't fall because the droplets are tiny, about a hundredth of a millimetre across. Air drag lets them sink only about a centimetre per second, and rising air currents easily hold them up.",
+      "intuitionTrap": "Clouds look weightless, so they seem to contain almost nothing.",
+      "principle": "Tiny droplets have very low terminal velocities, so large masses of water can stay suspended.",
+      "funFact": "A big thunderstorm cloud can hold hundreds of thousands of tonnes of water.",
+      "goDeeper": {"equation": "0.5 g/m³ × 10⁹ m³ = 5 × 10⁸ g", "text": "That's 500 tonnes. For tiny droplets, terminal velocity grows with the square of the radius (Stokes' law), so cloud droplets sink at only about a centimetre per second."},
+      "tags": ["clouds", "estimation", "terminal-velocity"], "concepts": ["terminal-velocity", "estimation"], "variantGroup": "cloud-mass", "source": "USGS Water Science School"
+    },
+    {
+      "id": "earth-sky-not-violet", "subcategory": "Atmosphere", "difficulty": "hard", "questionType": "causal", "answerType": "causal", "emoji": "🌤️",
+      "scenario": "Air scatters short wavelengths of light most strongly, and violet light has an even shorter wavelength than blue.",
+      "question": "So why does the sky look blue rather than violet?",
+      "options": ["Sunlight contains no violet", "Less violet light, weaker violet vision", "Ozone absorbs the violet"], "correctIndex": 1,
+      "reveal": "Sunlight has less violet, and our eyes are less sensitive to it.",
+      "explanation": "Air molecules scatter shorter wavelengths more strongly, so violet really is scattered even more than blue. But sunlight contains less violet than blue to begin with, and our eyes respond only weakly to violet. The colour-sensing cones in our eyes combine the scattered mix of violet, blue and some green into the sensation we call sky blue.",
+      "intuitionTrap": "If scattering favours short wavelengths, the shortest visible one should win.",
+      "principle": "Perceived colour depends on the light spectrum and on the sensitivity of our eyes, not just on the physics of scattering.",
+      "funFact": "Scattered skylight is also partly polarised, and bees use that polarisation pattern to navigate.",
+      "tags": ["rayleigh-scattering", "colour-vision", "sky"], "concepts": ["light-scattering", "colour-perception"], "variantGroup": "sky-colour"
+    },
+    {
+      "id": "earth-greenhouse-biggest-gas", "subcategory": "Climate", "difficulty": "hard", "questionType": "comparison", "answerType": "choice", "emoji": "🌡️",
+      "scenario": "Earth's natural greenhouse effect keeps the planet about 33 °C warmer than it would otherwise be.",
+      "question": "Which gas contributes the most to that natural greenhouse effect?",
+      "options": ["Carbon dioxide", "Water vapour", "Methane"], "correctIndex": 1,
+      "reveal": "Water vapour.",
+      "explanation": "Water vapour accounts for about half of today's greenhouse effect, clouds about a quarter, and CO₂ about a fifth. But water vapour acts as a feedback, not a control knob: how much the air can hold depends on temperature, and excess vapour rains out within days. CO₂ stays in the air for centuries. When CO₂ warms the planet, the air holds more water vapour, which amplifies that warming.",
+      "intuitionTrap": "Carbon dioxide dominates climate news, so it seems like it must be the biggest absorber.",
+      "principle": "Long-lived gases like CO₂ set the temperature; short-lived water vapour responds to it and amplifies the change.",
+      "funFact": "Without any greenhouse effect, Earth's average surface temperature would be around −18 °C instead of about 15 °C.",
+      "tags": ["climate", "greenhouse-effect", "water-vapour", "carbon-dioxide"], "concepts": ["greenhouse-effect", "climate-feedbacks"], "variantGroup": "greenhouse-gases",
+      "source": "Schmidt et al. (2010), Journal of Geophysical Research"
+    },
+    {
+      "id": "earth-plate-speed", "subcategory": "Plate tectonics", "difficulty": "easy", "questionType": "magnitude", "answerType": "quantity", "emoji": "🗺️",
+      "scenario": "The continents sit on tectonic plates that slowly move across Earth's surface.",
+      "question": "About how fast do they move?",
+      "options": ["About a metre per year", "As fast as fingernails grow", "Too slowly to measure"], "correctIndex": 1,
+      "reveal": "About as fast as your fingernails grow.",
+      "explanation": "Most plates move a few centimetres per year, from about 2 to 10 cm, similar to the rate fingernails grow. GPS stations measure this directly today. It sounds trivial, but over 100 million years, 5 cm per year adds up to 5,000 km, enough to open an entire ocean. The Atlantic has been widening like this since the supercontinent Pangaea broke apart.",
+      "intuitionTrap": "Continents feel permanently fixed, so any motion seems either impossible or catastrophic.",
+      "principle": "Slow, steady rates add up to enormous distances over geological time.",
+      "funFact": "India is still pushing north into Asia at a few centimetres a year, which keeps raising the Himalayas.",
+      "tags": ["plate-tectonics", "geological-time", "gps"], "concepts": ["plate-tectonics", "geological-time"], "variantGroup": "plate-speed"
+    },
+    {
+      "id": "earth-tsunami-open-ocean", "subcategory": "Oceans", "difficulty": "hard", "questionType": "prediction", "answerType": "choice", "emoji": "🌊",
+      "scenario": "A tsunami is crossing the deep open ocean. A ship far from shore is directly in its path.",
+      "question": "What does the ship experience as the wave passes?",
+      "options": ["A towering wall of water", "A gentle rise and fall", "A violent whirlpool"], "correctIndex": 1,
+      "reveal": "A gentle rise and fall it might not even notice.",
+      "explanation": "In deep water a tsunami may be less than a metre high, but its wavelength can be hundreds of kilometres, so a ship rises and falls gently over many minutes. The wave travels astonishingly fast, around 700 km/h in 4 km of water. Only when it reaches shallow coastal water does it slow down, bunch up and grow many metres tall.",
+      "intuitionTrap": "We picture the wall of water seen at the coast as existing all the way across the ocean.",
+      "principle": "Shallow-water waves slow and grow taller as depth decreases (wave shoaling).",
+      "funFact": "That's why ships in harbour are often ordered out to deep water when a tsunami warning is issued.",
+      "goDeeper": {"equation": "v = √(g·d)", "text": "With d = 4,000 m, v ≈ 198 m/s ≈ 713 km/h. In 10 m of water, v ≈ 36 km/h."},
+      "tags": ["tsunami", "waves", "oceans"], "concepts": ["wave-shoaling"], "variantGroup": "tsunami-deep-water", "source": "NOAA"
+    },
+    {
+      "id": "earth-raindrop-shape", "subcategory": "Water cycle", "difficulty": "easy", "questionType": "prediction", "answerType": "choice", "emoji": "💧",
+      "scenario": "Picture a medium-sized raindrop partway through its fall from a cloud.",
+      "question": "What shape is it?",
+      "options": ["A classic teardrop", "Round, flattened underneath", "Long and needle-like"], "correctIndex": 1,
+      "reveal": "Round, with a flattened bottom like a burger bun.",
+      "explanation": "Surface tension pulls small drops into near-perfect spheres. As drops get bigger and fall faster, air pressure pushes up on their undersides and flattens them, giving a shape more like a hamburger bun than a teardrop. Very large drops flatten so much that they break apart into smaller ones. The pointed teardrop is an artist's invention, perhaps borrowed from drips leaving a tap.",
+      "intuitionTrap": "Every cartoon and weather icon draws raindrops as teardrops.",
+      "principle": "Surface tension and air pressure together set the shape of a falling drop.",
+      "funFact": "Raindrops rarely grow beyond about 5 mm across before air resistance breaks them up.",
+      "tags": ["raindrops", "surface-tension", "weather"], "concepts": ["surface-tension"], "variantGroup": "raindrop-shape", "source": "USGS Water Science School"
+    },
+    {
+      "id": "earth-sea-ice-melt-level", "subcategory": "Climate", "difficulty": "hard", "questionType": "magnitude", "answerType": "magnitude", "emoji": "🧊",
+      "scenario": "Suppose all the floating Arctic sea ice melted completely.",
+      "question": "How much would that alone raise global sea level?",
+      "options": ["Several metres", "Around one metre", "Almost not at all"], "correctIndex": 2, "shuffle": false,
+      "reveal": "Almost not at all.",
+      "explanation": "Sea ice is already floating, so it already displaces its own weight of seawater, just like an ice cube in a drink. When it melts, it fills almost exactly the space it was displacing. Ice on land is different: melting glaciers and the Greenland and Antarctic ice sheets adds new water to the ocean and does raise sea levels, as does seawater expanding as it warms.",
+      "intuitionTrap": "'Melting ice' and 'rising seas' are so often linked that all ice seems to count.",
+      "principle": "Melting floating ice barely changes water level; melting land ice adds water to the ocean.",
+      "caveat": "Strictly, freshwater ice melting into salty seawater raises the level a tiny amount, because meltwater is slightly less dense than seawater.",
+      "funFact": "If Greenland's ice sheet melted entirely, global sea level would rise by about 7 metres.",
+      "tags": ["sea-level", "ice", "climate", "buoyancy"], "concepts": ["floating-displacement", "sea-level-rise"], "variantGroup": "sea-ice-level"
+    },
+    {
+      "id": "earth-sink-coriolis", "subcategory": "Weather", "difficulty": "medium", "questionType": "true-false", "answerType": "choice", "emoji": "🚰",
+      "scenario": "A popular claim says water drains clockwise in one hemisphere and anticlockwise in the other.",
+      "question": "Does Earth's rotation decide which way your sink swirls?",
+      "options": ["Yes, always", "No, the effect is far too weak", "Only near the equator"], "correctIndex": 1,
+      "reveal": "No; at sink size the effect is far too weak.",
+      "explanation": "The Coriolis effect is real and steers hurricanes, which spin anticlockwise in the Northern Hemisphere and clockwise in the Southern. But its strength depends on scale and time. Over a hurricane hundreds of kilometres wide lasting days, it dominates. In a sink, the shape of the basin and leftover swirls from filling it are thousands of times stronger, so drains can go either way in either hemisphere.",
+      "intuitionTrap": "If it works for hurricanes, it seems like it should work for any swirling water.",
+      "principle": "The Coriolis effect matters only for motions that are large or slow enough for Earth's rotation to act on them.",
+      "funFact": "Careful experiments using large, still tanks of water left to settle for a day have detected the true Coriolis direction.",
+      "tags": ["coriolis", "rotation", "myths"], "concepts": ["coriolis-effect"], "variantGroup": "sink-swirl"
+    },
+    {
+      "id": "earth-desert-cold-nights", "subcategory": "Climate", "difficulty": "medium", "questionType": "causal", "answerType": "causal", "emoji": "🏜️",
+      "scenario": "In many deserts, scorching afternoons are followed by surprisingly cold nights.",
+      "question": "What's the main reason the temperature drops so far?",
+      "options": ["The sand reflects heat at night", "Dry, clear air lets heat escape", "Cold winds blow in from mountains"], "correctIndex": 1,
+      "reveal": "Dry, clear air lets heat radiate straight out to space.",
+      "explanation": "At night the ground cools by radiating infrared heat upward. Water vapour and clouds absorb much of that infrared and send some back down, acting like a blanket. Desert air is dry and the skies are usually clear, so the heat escapes straight to space. Dry sand also stores relatively little heat, so the surface cools quickly once the Sun goes down.",
+      "intuitionTrap": "Hot places seem like they should stay hot.",
+      "principle": "Water vapour is a strong absorber of infrared radiation; dry, clear air lets surfaces cool rapidly.",
+      "funFact": "On clear nights, even in non-desert climates, frost can form on cars while the air temperature is still above freezing.",
+      "tags": ["radiation", "humidity", "deserts"], "concepts": ["radiative-cooling", "greenhouse-effect"], "variantGroup": "desert-nights"
+    }
+  ]
+}

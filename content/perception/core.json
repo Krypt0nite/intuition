@@ -1,0 +1,183 @@
+{
+  "pack": "perception-core",
+  "defaults": {
+    "category": "perception", "visualType": "emoji", "reviewStatus": "reviewed",
+    "reviewNotes": "Claude-authored and self-checked against the cited research; pending independent expert verification.",
+    "source": "Perception and cognitive psychology literature"
+  },
+  "questions": [
+    {
+      "id": "perc-moon-illusion", "subcategory": "Illusions", "difficulty": "medium", "questionType": "comparison", "answerType": "comparison", "emoji": "🌝",
+      "scenario": "A full Moon rising just above the horizon looks enormous. Hours later, high in the sky, it looks much smaller. You photograph it both times with the same zoom.",
+      "question": "How do the two photos compare?",
+      "options": ["The horizon Moon is much bigger", "About the same size", "The high Moon is much bigger"], "correctIndex": 1,
+      "reveal": "About the same size; the horizon Moon is even slightly smaller.",
+      "explanation": "The Moon covers about half a degree of sky wherever it is. At the horizon it's actually about one Earth-radius farther from you than when overhead, so it's about 1.5% smaller in photos. The giant horizon Moon is created by your brain, probably because it judges the horizon as farther away and scales up its estimate of size to compensate. Nobody has a complete explanation even now.",
+      "intuitionTrap": "Something we can see so vividly feels like it must be real.",
+      "principle": "Perceived size depends on perceived distance and context, not just the image on the retina.",
+      "funFact": "Bend over and look at the rising Moon upside-down between your legs; many people find the illusion weakens.",
+      "tags": ["illusions", "moon", "size-perception"], "concepts": ["size-constancy"], "variantGroup": "moon-illusion"
+    },
+    {
+      "id": "perc-blind-spot", "subcategory": "Vision", "difficulty": "easy", "questionType": "causal", "answerType": "causal", "emoji": "👁️",
+      "scenario": "Each of your eyes has a blind spot where the optic nerve leaves the retina, with no light sensors at all. Close one eye and look around.",
+      "question": "Why don't you see a hole in your vision?",
+      "options": ["Your brain fills it in", "The spot is too tiny to matter", "Your eye moves too fast to notice"], "correctIndex": 0,
+      "reveal": "Your brain fills it in.",
+      "explanation": "The blind spot is surprisingly big: about 5 degrees across, enough to make a coin at arm's length vanish, and you can find it with a dot on paper. With both eyes open, each eye covers the other's gap. But even with one eye closed you don't see a hole, because your brain fills the area with whatever pattern surrounds it. What you 'see' there is partly a construction.",
+      "intuitionTrap": "Vision feels like a camera recording everything faithfully.",
+      "principle": "Perception actively fills in missing information from context.",
+      "funFact": "Octopus eyes are wired the other way round and don't have this blind spot.",
+      "tags": ["vision", "blind-spot", "filling-in"], "concepts": ["perceptual-filling-in"], "variantGroup": "blind-spot"
+    },
+    {
+      "id": "perc-three-bowls", "subcategory": "Touch & temperature", "difficulty": "medium", "questionType": "prediction", "answerType": "choice", "emoji": "🥣",
+      "scenario": "You hold one hand in hot water and the other in cold water for a minute, then plunge both into the same bowl of lukewarm water.",
+      "question": "What do your hands feel?",
+      "options": ["Both feel lukewarm", "One feels cold, one feels warm", "Both feel cold"], "correctIndex": 1,
+      "reveal": "The 'hot' hand feels cold and the 'cold' hand feels warm.",
+      "explanation": "Your temperature sensors adapt: they report changes relative to what they've just become used to, more than absolute temperature. The hand adapted to hot water registers lukewarm as a drop, so it feels cool. The hand adapted to cold water registers it as a rise, so it feels warm. The same water feels like two different temperatures at once.",
+      "intuitionTrap": "We treat our sense of temperature as a reliable thermometer.",
+      "principle": "Sensory receptors adapt to steady stimulation and signal changes relative to that baseline.",
+      "funFact": "The philosopher John Locke described this experiment in 1690 to argue that heat and cold are partly in the mind.",
+      "tags": ["adaptation", "temperature", "touch"], "concepts": ["sensory-adaptation"], "variantGroup": "three-bowls"
+    },
+    {
+      "id": "perc-black-paper-sunlight", "subcategory": "Vision", "difficulty": "hard", "questionType": "comparison", "answerType": "comparison", "emoji": "📃",
+      "scenario": "A sheet of white paper lies under a dim reading lamp indoors. A sheet of black paper lies outside in bright midday sun.",
+      "question": "Which sheet actually sends more light into your eyes?",
+      "options": ["The white paper indoors", "The black paper outside", "About the same"], "correctIndex": 1,
+      "reveal": "The black paper outside, by roughly ten times.",
+      "explanation": "Direct sunlight is hundreds of times brighter than typical indoor lighting. White paper reflects most of the light falling on it; black paper only a few per cent. A few per cent of sunlight still beats most of a dim lamp's light, roughly ten to one. Yet the black paper still looks black, because your brain judges lightness by comparing a surface with its surroundings, not by the raw amount of light.",
+      "intuitionTrap": "We assume 'white' means 'sends more light' in every situation.",
+      "principle": "Lightness constancy: the visual system estimates surface reflectance relative to the surrounding scene.",
+      "funFact": "The famous 'checker shadow' illusion uses the same mechanism to make two identical greys look completely different.",
+      "tags": ["lightness-constancy", "vision", "illusions"], "concepts": ["lightness-constancy"], "variantGroup": "black-white-paper"
+    },
+    {
+      "id": "perc-visual-reaction-time", "subcategory": "Reaction time", "difficulty": "easy", "questionType": "estimation", "answerType": "time", "emoji": "🚦",
+      "scenario": "You're watching for a light to turn on, ready to press a button the instant you see it.",
+      "question": "About how long does it take you to react?",
+      "options": ["About 0.02 seconds", "About 0.25 seconds", "About 1 second"], "correctIndex": 1, "shuffle": false,
+      "reveal": "About a quarter of a second.",
+      "explanation": "Simple visual reaction time for an alert adult is typically around 0.2 to 0.25 seconds. Light must be converted to nerve signals in the retina, travel to the brain, be recognised, trigger a decision and then send a command down to your muscles. It feels instant, but at 100 km/h a car travels about 6–7 metres before the driver even begins to react.",
+      "intuitionTrap": "Our reactions feel instantaneous because we don't experience the delay.",
+      "principle": "Perception and action involve chains of neural processing that take measurable time.",
+      "funFact": "Reactions to sound are usually a few hundredths of a second faster than reactions to light.",
+      "tags": ["reaction-time", "neuroscience"], "concepts": ["neural-delay"], "variantGroup": "reaction-time"
+    },
+    {
+      "id": "perc-mcgurk-effect", "subcategory": "Hearing", "difficulty": "hard", "questionType": "prediction", "answerType": "choice", "emoji": "🗣️",
+      "scenario": "You watch a video of someone's lips saying 'ga', but the soundtrack has been swapped for a recording of 'ba'.",
+      "question": "What do most people hear?",
+      "options": ["'ba', since the audio wins", "'ga', since the video wins", "Something new, like 'da'"], "correctIndex": 2,
+      "reveal": "Something in between, usually 'da'.",
+      "explanation": "Your brain doesn't process hearing and vision separately; it fuses them into one best guess about what was said. The sound 'ba' and the lip movement 'ga' conflict, and the brain often settles on 'da', a sound that fits both reasonably well. Strikingly, it keeps happening even when you know about the trick: close your eyes and you hear 'ba' again.",
+      "intuitionTrap": "Hearing feels like it comes purely from the ears.",
+      "principle": "Multisensory integration: the brain combines cues from different senses into a single perception.",
+      "funFact": "The effect was described by Harry McGurk and John MacDonald in 1976, after a technician mismatched sounds and lip movements by accident.",
+      "tags": ["hearing", "multisensory", "speech"], "concepts": ["multisensory-integration"], "variantGroup": "mcgurk",
+      "source": "McGurk & MacDonald (1976), Nature 264, 746–748"
+    },
+    {
+      "id": "perc-invisible-gorilla", "subcategory": "Attention", "difficulty": "medium", "questionType": "estimation", "answerType": "quantity", "emoji": "🦍",
+      "scenario": "Volunteers watch a short video and count passes between basketball players. Midway through, a person in a gorilla suit walks through the scene and thumps their chest.",
+      "question": "Roughly what share of viewers fail to notice the gorilla?",
+      "options": ["Almost nobody", "About half", "Nearly everyone"], "correctIndex": 1, "shuffle": false,
+      "reveal": "About half.",
+      "explanation": "In the original 1999 study, around half the counting viewers never saw the gorilla, even though it was on screen for several seconds. Attention acts like a spotlight: what falls outside it can go completely unnoticed, even when it's right in front of your eyes. It's called inattentional blindness, and it's one reason drivers can 'look but fail to see' a cyclist.",
+      "intuitionTrap": "We assume we'd obviously notice something so bizarre.",
+      "principle": "Inattentional blindness: unexpected objects often go unseen when attention is focused elsewhere.",
+      "funFact": "In a later study, many radiologists searching CT scans for lung nodules missed a gorilla image hidden in the scan.",
+      "tags": ["attention", "inattentional-blindness"], "concepts": ["inattentional-blindness"], "variantGroup": "invisible-gorilla",
+      "source": "Simons & Chabris (1999), Perception 28, 1059–1074"
+    },
+    {
+      "id": "perc-certainty-calibration", "subcategory": "Cognitive biases", "difficulty": "medium", "questionType": "estimation", "answerType": "quantity", "emoji": "😎",
+      "scenario": "In classic experiments, people answer general-knowledge questions and say how certain they are of each answer.",
+      "question": "On answers people say they're virtually certain about, how often are they actually right?",
+      "options": ["Virtually always", "Noticeably less often", "Less than half the time"], "correctIndex": 1, "shuffle": false,
+      "reveal": "Noticeably less often than they expect.",
+      "explanation": "Studies of confidence consistently find overconfidence: answers people feel near-certain about are wrong more often than that certainty implies, sometimes in a sizeable minority of cases. Feeling sure is a feeling, produced by how easily an answer comes to mind, not a measurement of accuracy. That's exactly what this game's surprise rate measures.",
+      "intuitionTrap": "The strength of a feeling of certainty seems like evidence in itself.",
+      "principle": "Confidence and accuracy are only loosely linked; people tend to be overconfident on hard questions.",
+      "funFact": "Weather forecasters are among the best-calibrated experts: when they say 70% chance of rain, it rains about 70% of the time.",
+      "tags": ["overconfidence", "calibration", "metacognition"], "concepts": ["overconfidence"], "variantGroup": "certainty-calibration",
+      "source": "Fischhoff, Slovic & Lichtenstein (1977), 'Knowing with certainty'"
+    },
+    {
+      "id": "perc-flashbulb-memories", "subcategory": "Memory", "difficulty": "hard", "questionType": "prediction", "answerType": "choice", "emoji": "📸",
+      "scenario": "Right after a shocking news event, researchers record where people say they were and what they were doing. They ask the same people again years later.",
+      "question": "What do they typically find?",
+      "options": ["Memories stay accurate", "Stories change, confidence stays", "People forget it entirely"], "correctIndex": 1,
+      "reveal": "The stories change, but confidence stays high.",
+      "explanation": "Vivid 'flashbulb' memories feel like photographs, but they drift like ordinary memories. When researchers compared accounts recorded the day after the 1986 Challenger disaster with accounts from years later, many had changed substantially, sometimes completely. Yet people were highly confident in their later versions, and some insisted their own original handwritten accounts must be wrong.",
+      "intuitionTrap": "Vividness and emotion feel like guarantees of accuracy.",
+      "principle": "Memory is reconstructive: each recall can alter it, while confidence can remain high.",
+      "funFact": "Studies after 9/11 found flashbulb memories decayed about as fast as everyday memories, but felt far more certain.",
+      "tags": ["memory", "confidence", "reconstruction"], "concepts": ["reconstructive-memory", "overconfidence"], "variantGroup": "flashbulb-memory",
+      "source": "Neisser & Harsch (1992); Talarico & Rubin (2003), Psychological Science"
+    },
+    {
+      "id": "perc-spinning-dizziness", "subcategory": "Balance", "difficulty": "easy", "questionType": "causal", "answerType": "causal", "emoji": "🌀",
+      "scenario": "You spin around quickly for 30 seconds, then stop suddenly.",
+      "question": "Why does the room seem to keep spinning?",
+      "options": ["Fluid in your inner ear keeps moving", "Your eyes keep rotating", "Blood rushes to your head"], "correctIndex": 0,
+      "reveal": "Fluid in your inner ear keeps moving.",
+      "explanation": "Your inner ear has three fluid-filled loops, the semicircular canals, that sense rotation. When you spin steadily, the fluid catches up and moves with you, so the sensation fades. When you stop, the fluid keeps swirling for a few seconds, bending tiny sensors as if you were turning the other way. Your brain believes the ear, and your eyes even flick to track a rotation that isn't happening.",
+      "intuitionTrap": "Dizziness feels like something in the head generally, not a specific sensor.",
+      "principle": "The semicircular canals detect rotation through the inertia of fluid relative to the head.",
+      "funFact": "Ballet dancers reduce dizziness by 'spotting', snapping their head round to keep their eyes fixed on one point.",
+      "tags": ["balance", "inner-ear", "vestibular"], "concepts": ["vestibular-system", "inertia"], "variantGroup": "spin-dizziness"
+    },
+    {
+      "id": "perc-anchoring-wheel", "subcategory": "Cognitive biases", "difficulty": "medium", "questionType": "prediction", "answerType": "causal", "emoji": "🎡",
+      "scenario": "Before estimating what percentage of UN member countries are in Africa, people watch a wheel of fortune land on a number: 10 for some, 65 for others. Everyone knows the wheel is random.",
+      "question": "Does the random number affect their estimates?",
+      "options": ["No, it's obviously irrelevant", "Yes, higher numbers, higher guesses", "Only for people who know nothing"], "correctIndex": 1,
+      "reveal": "Yes: higher wheel numbers led to higher estimates.",
+      "explanation": "In Tversky and Kahneman's 1974 study, people who saw 10 gave a median estimate of 25%, while those who saw 65 gave a median of 45%, despite knowing the number was random. This is anchoring: an initial number pulls later estimates toward it, because people adjust from it insufficiently. It shows up in pricing, negotiations and even judges' sentencing.",
+      "intuitionTrap": "If you know a number is meaningless, you assume you can simply ignore it.",
+      "principle": "Anchoring: initial values bias subsequent numerical judgements, even when obviously irrelevant.",
+      "funFact": "In one experiment, the last two digits of people's social security numbers influenced how much they'd bid for wine and chocolates.",
+      "tags": ["anchoring", "cognitive-bias", "estimation"], "concepts": ["anchoring"], "variantGroup": "anchoring",
+      "source": "Tversky & Kahneman (1974), Science 185, 1124–1131"
+    },
+    {
+      "id": "perc-sound-localisation", "subcategory": "Hearing", "difficulty": "medium", "questionType": "causal", "answerType": "causal", "emoji": "👂",
+      "scenario": "With your eyes closed, someone snaps their fingers off to your left, and you point straight at them.",
+      "question": "What does your brain mainly use to work out the direction?",
+      "options": ["Only how loud it is", "Tiny differences between ears", "Vibrations through your skull"], "correctIndex": 1,
+      "reveal": "Tiny differences in timing and loudness between your two ears.",
+      "explanation": "A sound from the left reaches your left ear a fraction of a millisecond before your right, and slightly louder because your head shadows the right ear. Your brain detects timing differences of only tens of microseconds and turns them into a direction. The folds of your outer ear also reshape sounds slightly depending on whether they come from above or below.",
+      "intuitionTrap": "Locating a sound feels effortless, as if direction were simply part of the sound.",
+      "principle": "The brain computes direction from interaural time and level differences.",
+      "funFact": "Barn owls have one ear higher than the other, letting them pinpoint mice in total darkness in both direction and height.",
+      "tags": ["hearing", "localisation", "neuroscience"], "concepts": ["sound-localisation"], "variantGroup": "sound-direction"
+    },
+    {
+      "id": "perc-waterfall-aftereffect", "subcategory": "Illusions", "difficulty": "hard", "questionType": "direction", "answerType": "direction", "emoji": "🏞️",
+      "scenario": "You stare at a waterfall for a full minute, then shift your gaze to the motionless rocks beside it.",
+      "question": "What do the rocks appear to do?",
+      "options": ["Nothing unusual", "Drift slowly upward", "Drift slowly downward"], "correctIndex": 1,
+      "reveal": "They seem to drift slowly upward.",
+      "explanation": "Some neurons in your visual system respond to downward motion, others to upward motion, and you perceive motion from the balance between them. Staring at the falling water tires out the 'downward' neurons. When you look at still rocks, the 'upward' neurons briefly win the tug-of-war, and stationary rocks appear to creep upward, even though they clearly aren't going anywhere.",
+      "intuitionTrap": "Motion seems to be something we directly see, not something the brain computes.",
+      "principle": "Motion aftereffect: adaptation of direction-selective neurons shifts perception the opposite way.",
+      "funFact": "It's sometimes called the waterfall illusion; Aristotle described something like it over 2,000 years ago.",
+      "tags": ["illusions", "motion", "adaptation"], "concepts": ["motion-aftereffect", "sensory-adaptation"], "variantGroup": "waterfall-illusion"
+    },
+    {
+      "id": "perc-nose-pinch-flavour", "subcategory": "Taste & smell", "difficulty": "easy", "questionType": "prediction", "answerType": "change", "emoji": "🍬",
+      "scenario": "You pinch your nose shut, pop a cherry-flavoured jellybean in your mouth and chew.",
+      "question": "What happens to its taste?",
+      "options": ["Tastes just the same", "Only sweet; the cherry vanishes", "The cherry gets stronger"], "correctIndex": 1,
+      "reveal": "It tastes only sweet; the cherry flavour vanishes.",
+      "explanation": "Your tongue detects only a handful of basic tastes, such as sweet, salty, sour, bitter and savoury. Most of what we call flavour is smell: aromas from food in your mouth travel up the back of your throat to your nose. Pinch your nose and that airflow stops, so you get just sweetness. Let go mid-chew and the cherry rushes back.",
+      "intuitionTrap": "Flavour feels like it happens on the tongue.",
+      "principle": "Flavour combines taste with retronasal smell; most food-specific flavour comes from smell.",
+      "funFact": "That's why food tastes bland when you have a blocked nose from a cold.",
+      "tags": ["taste", "smell", "flavour"], "concepts": ["retronasal-olfaction"], "variantGroup": "nose-pinch"
+    }
+  ]
+}

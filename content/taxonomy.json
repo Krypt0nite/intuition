@@ -1,0 +1,42 @@
+{
+  "categories": [
+    {
+      "id": "physics", "name": "Physics", "emoji": "⚛️", "prefix": "phy", "color": "#6CB8FF",
+      "subcategories": ["Mechanics", "Gravity", "Circular motion", "Rotation", "Momentum", "Energy", "Friction", "Fluids", "Thermodynamics", "Waves & sound", "Optics", "Electricity", "Magnetism", "Relativity", "Quantum", "Nuclear", "Particle physics"]
+    },
+    {
+      "id": "chemistry", "name": "Chemistry", "emoji": "🧪", "prefix": "chem", "color": "#B79CFF",
+      "subcategories": ["Atomic structure", "Bonding", "Solutions", "Acids & bases", "Gases", "Thermochemistry", "Equilibrium", "Reaction rates", "Redox & electrochemistry", "Organic & polymers", "Surface chemistry", "Food chemistry", "Environmental chemistry", "Everyday chemistry"]
+    },
+    {
+      "id": "biology", "name": "Biology", "emoji": "🧬", "prefix": "bio", "color": "#45D69A",
+      "subcategories": ["Cells", "Osmosis & diffusion", "Genetics", "Evolution", "Physiology", "Nervous system", "Muscles", "Blood & circulation", "Respiration", "Immune system", "Microbiology", "Plants", "Ecology", "Animal biology", "Metabolism", "Aging"]
+    },
+    {
+      "id": "astronomy", "name": "Space", "emoji": "🌌", "prefix": "astro", "color": "#8C9BFF",
+      "subcategories": ["Solar system", "Moon", "Stars", "Stellar evolution", "Black holes", "Gravity & orbits", "Tides", "Light & distance", "Cosmology", "Space travel", "Relativity", "Planets", "Exoplanets"]
+    },
+    {
+      "id": "earth-science", "name": "Earth", "emoji": "🌋", "prefix": "earth", "color": "#F2A65A",
+      "subcategories": ["Atmosphere", "Weather", "Climate", "Oceans", "Earthquakes", "Volcanoes", "Plate tectonics", "Water cycle", "Geology"]
+    },
+    {
+      "id": "everyday-science", "name": "Everyday", "emoji": "🏠", "prefix": "every", "color": "#FFC94D",
+      "subcategories": ["Kitchen", "Home appliances", "Cars & bikes", "Sports", "Clothing & comfort", "Materials", "Cleaning", "Water & ice"]
+    },
+    {
+      "id": "technology", "name": "Technology", "emoji": "💻", "prefix": "tech", "color": "#5FD3E0",
+      "subcategories": ["Computers", "Memory & storage", "Networks", "Internet security", "GPS & navigation", "Screens & cameras", "Wireless", "Batteries & energy", "AI & data", "Cryptography"]
+    },
+    {
+      "id": "mathematics", "name": "Maths", "emoji": "📐", "prefix": "math", "color": "#FF8FB1",
+      "subcategories": ["Probability", "Statistics", "Geometry", "Growth & exponentials", "Ratios & averages", "Infinity", "Paradoxes", "Combinatorics", "Graphs", "Logic"]
+    },
+    {
+      "id": "perception", "name": "Perception", "emoji": "👁️", "prefix": "perc", "color": "#FF7A6B",
+      "subcategories": ["Vision", "Hearing", "Touch & temperature", "Balance", "Taste & smell", "Reaction time", "Memory", "Attention", "Cognitive biases", "Illusions"]
+    }
+  ],
+  "questionTypes": ["prediction", "comparison", "direction", "ordering", "true-false", "magnitude", "time", "multi-stage", "chain", "estimation", "causal"],
+  "answerTypes": ["change", "direction", "comparison", "time", "causal", "boolean", "choice", "magnitude", "quantity"]
+}
